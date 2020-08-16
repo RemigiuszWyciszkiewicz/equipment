@@ -1,13 +1,13 @@
 <div class="equipment-container">
   <div class="equipment">
-    <app-equipment-section (onItemSelection)="onItemSelection($event)" [items]="chests">
+    <app-equipment-section (onItemSelection)="onItemSelection($event)" [items]="chests" [supportedItemType]="itemType.CHEST">
       <ng-template appHeaderTemplate>
         <div class="chests-header d-flex justify-content-center align-items-center mb-3">
           SKRZYNIE
         </div>
       </ng-template>
     </app-equipment-section>
-    <app-equipment-section (onItemSelection)="onItemSelection($event)" [items]="rewards">
+    <app-equipment-section (onItemSelection)="onItemSelection($event)" [items]="rewards" [supportedItemType]="itemType.REWARD">
       <ng-template appHeaderTemplate>
         <div class="rewards-header mt-4 mb-3 d-flex flex-column justify-content-center align-items-center">
           <div class="rewards-header-label-1">NAGRODY</div>
@@ -20,7 +20,7 @@
     </app-equipment-section>
   </div>
   <div class="preview" [@openClose]="isPreviewOpen ? 'open' : 'closed'">
-    <app-equipment-item-preview (onClosePreview)="onClosePreview()" (onChestOpen)="onChestOpen($event)">
+    <app-equipment-item-preview (onClosePreview)="onClosePreview()" (onChestOpen)="onChestOpen($event)" [item]="activeItem">
     </app-equipment-item-preview>
   </div>
 </div>

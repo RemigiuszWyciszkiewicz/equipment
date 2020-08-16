@@ -1,13 +1,24 @@
 .equipment-container {
   width: 100%;
+
+  // z-index: 0;
 }
 
 .equipment {
   position: relative;
   padding: 1.5rem;
-  width: 100%;
+  // width: 25rem;
+  width: 50%;
   background-color: rgb(49, 58, 62);
+
   border-right: 3px solid rgb(120, 144, 156);
+
+  z-index: 2;
+}
+
+.preview {
+  position: absolute;
+  top: 0px;
 }
 
 .chests-header {

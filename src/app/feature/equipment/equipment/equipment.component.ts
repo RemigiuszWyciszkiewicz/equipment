@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from './data/items-mock.json';
 import { Item, ItemType } from './data/item';
+
+import { transAnimation } from 'src/animations';
 import { v4 as uuidv4 } from 'uuid';
 @Component({
   selector: 'app-equipment',
   templateUrl: './equipment.component.html',
   styleUrls: ['./equipment.component.scss'],
+  animations: [transAnimation],
 })
 export class EquipmentComponent implements OnInit {
   get chests(): Item[] {
@@ -53,7 +56,7 @@ export class EquipmentComponent implements OnInit {
 
   private removeChest(item: Item): void {
     this.items = this.items.filter((value) => {
-      return value.name !== item.name;
+      return value.id !== item.id;
     });
   }
 

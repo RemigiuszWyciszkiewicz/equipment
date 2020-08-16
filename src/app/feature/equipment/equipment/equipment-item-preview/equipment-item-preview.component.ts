@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ItemType } from '../data/item';
+import { ItemType, Item } from '../data/item';
 
 @Component({
   selector: 'app-equipment-item-preview',
@@ -8,7 +8,7 @@ import { ItemType } from '../data/item';
 })
 export class EquipmentItemPreviewComponent implements OnInit {
   temType = ItemType;
-  @Input() data;
+  @Input() item: Item;
 
   constructor() {}
 

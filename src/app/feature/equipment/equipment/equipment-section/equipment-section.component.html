@@ -3,7 +3,7 @@
 </ng-container>
 <div class="grid">
   <div
-    [ngClass]="{ 'with-content-selected': item === selectedItem }"
+    [ngClass]="{ 'with-content-selected': item === selectedItem && sectionType['sectionType'] === supportedItemType }"
     (click)="itemSelection(item)"
     class="grid-item pointer"
     *ngFor="let item of items"
