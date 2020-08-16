@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as data from './data/items-mock.json';
 import { Item, ItemType } from './data/item';
 
@@ -10,7 +10,7 @@ import { v4 as uuidv4 } from 'uuid';
   styleUrls: ['./equipment.component.scss'],
   animations: [transAnimation],
 })
-export class EquipmentComponent implements OnInit {
+export class EquipmentComponent {
   get chests(): Item[] {
     return this.items.filter((value) => value.type === ItemType.CHEST);
   }
@@ -25,14 +25,11 @@ export class EquipmentComponent implements OnInit {
     }, 0);
   }
 
+  @Input() items: Item[];
+
   itemType = ItemType;
   isPreviewOpen = false;
   activeItem: Item;
-  items: Item[];
-
-  ngOnInit(): void {
-    this.loadMock();
-  }
 
   changePreviewState(): void {
     this.isPreviewOpen = !this.isPreviewOpen;
@@ -66,9 +63,5 @@ export class EquipmentComponent implements OnInit {
 
   private selectRandomReward(rewards: Item[]): Item {
     return rewards[Math.floor(Math.random() * rewards.length)];
-  }
-
-  private loadMock(): void {
-    this.items = data['default'];
   }
 }
