@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 1.1rem;
+}
+
+.grid-item {
+  height: 4rem;
+  width: 4rem;
+  border: 3px solid rgb(120, 144, 156);
+  border-radius: 2px;
+  padding: 2px;
+
+  &-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
