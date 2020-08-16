@@ -1,11 +1,40 @@
+.equipment-container {
+  width: 100%;
+}
+
 .equipment {
-  padding: 1.5rem;
-  width: 25rem;
-  background-color: rgb(49, 58, 62);
   position: relative;
+  padding: 1.5rem;
+  width: 100%;
+  background-color: rgb(49, 58, 62);
   border-right: 3px solid rgb(120, 144, 156);
 }
 
 .preview {
   position: absolute;
+  top: 0px;
+}
+
+.chests-header {
+  color: rgb(33, 231, 182);
+  padding: 0.6rem;
+}
+
+.rewards-header {
+  &-label-1 {
+    color: rgb(33, 231, 182);
+  }
+  &-label-2 {
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+  }
+
+  .rewards-total-value {
+    font-size: 0.9rem;
+    color: white;
+  }
+
+  .rewards-total-label {
+    color: rgb(120, 144, 156);
+  }
 }

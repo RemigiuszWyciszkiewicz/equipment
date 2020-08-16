@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ItemType } from '../data/item';
 
 @Component({
   selector: 'app-equipment-item-preview',
@@ -6,7 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./equipment-item-preview.component.scss'],
 })
 export class EquipmentItemPreviewComponent implements OnInit {
+  temType = ItemType;
+  @Input() data;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  i;
 }
