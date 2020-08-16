@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from './data/items-mock.json';
 import { Item, ItemType } from './data/item';
+import { v4 as uuidv4 } from 'uuid';
 @Component({
   selector: 'app-equipment',
   templateUrl: './equipment.component.html',
@@ -57,7 +58,7 @@ export class EquipmentComponent implements OnInit {
   }
 
   private addReward(reward: Item): void {
-    this.items.push(reward);
+    this.items.push({ id: uuidv4(), ...reward });
   }
 
   private selectRandomReward(rewards: Item[]): Item {

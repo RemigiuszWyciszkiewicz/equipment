@@ -1,93 +1,88 @@
 [
-  { "name": "Survival chest", "image": "assets/sample-chest.png", "type": "chest", "price": 12 },
-  { "name": "Legendary chest", "image": "assets/sample-chest.png", "type": "chest", "price": 421 },
-  { "name": "Warrior`s chest", "image": "assets/sample-chest.png", "type": "chest", "price": 23 },
-  { "name": "Chest of harvest", "image": "assets/sample-chest.png", "type": "chest", "price": 23 },
-  { "name": "Chest of classics", "image": "assets/sample-chest.png", "type": "chest", "price": 12 },
-  { "name": "Chest of dungeon", "image": "assets/sample-chest.png", "type": "chest", "price": 22 },
+  { "id": 1410, "name": "Survival chest", "image": "assets/sample-chest.png", "type": "chest", "value": 12 },
+  { "id": 1411, "name": "Legendary chest", "image": "assets/sample-chest.png", "type": "chest", "value": 421 },
+  { "id": 1412, "name": "Warrior`s chest", "image": "assets/sample-chest.png", "type": "chest", "value": 23 },
+  { "id": 1413, "name": "Chest of harvest", "image": "assets/sample-chest.png", "type": "chest", "value": 23 },
+  { "id": 1414, "name": "Chest of classics", "image": "assets/sample-chest.png", "type": "chest", "value": 12 },
+  { "id": 1415, "name": "Chest of dungeon", "image": "assets/sample-chest.png", "type": "chest", "value": 22 },
   {
+    "id": 1416,
     "name": "Chest of sports",
     "image": "assets/sample-reward.png",
     "type": "reward",
-    "price": 85,
-    "key": "42141-521521-521512-52151"
+    "value": 85,
+    "key": "11241-00141-11241-52507"
   },
   {
+    "id": 1417,
     "name": "Riot Points EUNE",
     "image": "assets/sample-reward.png",
     "type": "reward",
-    "price": 45,
-    "key": "42141-521521-521512-52151"
+    "value": 45,
+    "key": "52507-52521-53454-01141"
   },
   {
+    "id": 1418,
     "name": "Random Steam CD-Key",
     "image": "assets/sample-reward.png",
     "type": "reward",
-    "price": 34,
-    "key": "42141-521521-521512-52151"
+    "value": 34,
+    "key": "42141-06856-52112-52507"
   },
   {
+    "id": 1419,
     "name": "PaySafeCard",
     "image": "assets/sample-reward.png",
     "type": "reward",
-    "price": 63,
-    "key": "42141-521521-521512-52151"
+    "value": 63,
+    "key": "42141-21521-01141-53454"
   },
   {
+    "id": 14110,
     "name": "Steam Wallet",
     "image": "assets/sample-reward.png",
     "type": "reward",
-    "price": 2,
-    "key": "42141-521521-521512-52151"
+    "value": 2,
+    "key": "06856-51521-52112-06856"
   },
   {
+    "id": 14111,
     "name": "Counter-Strike: Global Offensive Sking",
     "image": "assets/sample-reward.png",
     "type": "reward",
-    "price": 214,
-    "key": "42141-521521-521512-52151"
+    "value": 214,
+    "key": "00141-53454-52507-52151"
   },
   {
+    "id": 14112,
     "name": "Amazon.de Kupone EUR",
     "image": "assets/sample-reward.png",
     "type": "reward",
-    "price": 52,
-    "key": "42141-521521-521512-52151"
+    "value": 60,
+    "key": "42141-06856-52112-53454"
   },
   {
+    "id": 14311,
     "name": "Premium Random Steam CD-Key",
     "image": "assets/sample-reward.png",
     "type": "reward",
-    "price": 21234,
-    "key": "42141-521521-521512-52151"
+    "value": 4,
+    "key": "00141-52507-52112-52151"
   },
   {
+    "id": 14411,
     "name": "Kinguin Gift Card",
     "image": "assets/sample-reward.png",
     "type": "reward",
-    "price": 51,
-    "key": "42141-521521-521512-52151"
-  },
-  { "name": "Fortnite", "image": "assets/sample-reward.png", "type": "reward", "price": 23, "key": "42141-521521-521512-52151" },
-  {
-    "name": "Grant Thift Auto V",
-    "image": "assets/sample-reward.png",
-    "type": "reward",
-    "price": 63,
-    "key": "42141-521521-521512-52151"
+    "value": 51,
+    "key": "62856-00141-52507-52151"
   },
   {
-    "name": "Killing Floor 2",
+    "id": 14511,
+    "name": "Fortnite",
     "image": "assets/sample-reward.png",
     "type": "reward",
-    "price": 21,
-    "key": "42141-521521-521512-52151"
-  },
-  {
-    "name": "Euro Truck Simulator 2",
-    "image": "assets/sample-reward.png",
-    "type": "reward",
-    "price": 33,
-    "key": "42141-521521-521512-52151"
+    "value": 23,
+    "key": "53454-11241-06856-52151"
   }
 ]
