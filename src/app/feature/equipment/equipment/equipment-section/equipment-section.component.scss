@@ -17,3 +17,10 @@
     max-height: 100%;
   }
 }
+.empty {
+  border: 3px solid rgba(0, 0, 0, 0.412);
+}
+
+.with-content-selected {
+  border: 3px solid rgb(254, 190, 35);
+}
