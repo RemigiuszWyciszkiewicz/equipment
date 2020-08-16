@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { ItemType, Item } from '../data/item';
 
 @Component({
@@ -6,13 +6,19 @@ import { ItemType, Item } from '../data/item';
   templateUrl: './equipment-item-preview.component.html',
   styleUrls: ['./equipment-item-preview.component.scss'],
 })
-export class EquipmentItemPreviewComponent implements OnInit {
-  temType = ItemType;
+export class EquipmentItemPreviewComponent {
+  itemType = ItemType;
+
+  @Output() onClosePreview = new EventEmitter();
+  @Output() onChestOpen = new EventEmitter();
+
   @Input() item: Item;
 
-  constructor() {}
+  closePreview(): void {
+    this.onClosePreview.emit();
+  }
 
-  ngOnInit(): void {}
-
-  i;
+  openChest(item: Item): void {
+    this.onChestOpen.emit(item);
+  }
 }

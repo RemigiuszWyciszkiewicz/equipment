@@ -1,5 +1,57 @@
-.preview-test {
-  width: 50%;
-  height: 50%;
-  background-color: red;
+.preview-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(49, 58, 62);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2.2fr 1fr;
+  justify-items: stretch;
+  position: relative;
+
+  .item-name {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .item-img {
+    justify-self: center;
+
+    img {
+      width: 280px;
+    }
+  }
+}
+
+.key-preview {
+  justify-self: center;
+  &-label {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+  }
+
+  &-value {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(108, 108, 108);
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.close {
+  color: white;
+  position: absolute;
+  float: right;
+  font-size: 1rem;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}
+
+.btn-primary {
+  font-weight: 600;
 }
