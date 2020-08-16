@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import { ItemType, Item } from '../data/item';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Item, ItemType } from '../data/item';
 
 @Component({
   selector: 'app-equipment-item-preview',

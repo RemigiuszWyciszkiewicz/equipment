@@ -1,14 +1,16 @@
 <ng-container *ngIf="headerTemplate">
   <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
 </ng-container>
-<div class="grid">
-  <div
-    [ngClass]="{ 'with-content-selected': item === selectedItem && sectionType['sectionType'] === supportedItemType }"
-    (click)="itemSelection(item)"
-    class="grid-item pointer"
-    *ngFor="let item of items"
-  >
-    <img *ngIf="item && item.image" class="grid-item-image disable-selection" [src]="item.image" alt="item_icon" />
+<div class="grid-container">
+  <div class="grid">
+    <div
+      [ngClass]="{ 'with-content-selected': item === selectedItem && sectionType['sectionType'] === supportedItemType }"
+      (click)="itemSelection(item)"
+      class="grid-item pointer"
+      *ngFor="let item of items"
+    >
+      <img *ngIf="item && item.image" class="grid-item-image disable-selection" [src]="item.image" alt="item_icon" />
+    </div>
+    <div class="grid-item empty" *ngFor="let missingCell of missingCellsArray"></div>
   </div>
-  <div class="grid-item empty" *ngFor="let missingCell of missingCellsArray"></div>
 </div>

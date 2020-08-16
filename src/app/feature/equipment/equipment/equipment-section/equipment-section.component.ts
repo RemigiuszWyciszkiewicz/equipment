@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, ContentChild, TemplateRef, Inject } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ContentChild, TemplateRef, AfterViewInit, Inject } from '@angular/core';
 import { Item, ItemType } from '../data/item';
 import { HeaderTemplateDirective } from './header-template.directive';
 import { SECTION_ACTIVATED_TYPE_PROVIDER, SECTION_ACTIVATED_TYPE } from './section-type-activation-provider';
@@ -9,11 +9,11 @@ import { SECTION_ACTIVATED_TYPE_PROVIDER, SECTION_ACTIVATED_TYPE } from './secti
   providers: [SECTION_ACTIVATED_TYPE_PROVIDER],
 })
 export class EquipmentSectionComponent {
+  constructor(@Inject(SECTION_ACTIVATED_TYPE) public sectionType: { sectionType: ItemType }) {}
+
   get missingCellsArray(): Array<number> {
     return new Array(4 - (this.items.length % 4));
   }
-
-  constructor(@Inject(SECTION_ACTIVATED_TYPE) public sectionType: { sectionType: ItemType }) {}
 
   @ContentChild(HeaderTemplateDirective, { read: TemplateRef }) headerTemplate: TemplateRef<any>;
   @Output() onItemSelection = new EventEmitter();
@@ -23,6 +23,7 @@ export class EquipmentSectionComponent {
   selectedItem: Item;
 
   itemSelection(item: Item): void {
+    this.sectionType.sectionType = this.supportedItemType;
     this.selectedItem = item;
     this.onItemSelection.emit(item);
   }
