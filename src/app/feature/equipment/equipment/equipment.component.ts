@@ -9,5 +9,7 @@ import { Item, ItemType } from './data/item';
 export class EquipmentComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(data['default']);
+  }
 }

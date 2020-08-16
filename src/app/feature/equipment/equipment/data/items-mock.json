@@ -1,0 +1,93 @@
+[
+  { "name": "Survival chest", "image": "assets/sample-chest.png", "type": "chest", "price": 12 },
+  { "name": "Legendary chest", "image": "assets/sample-chest.png", "type": "chest", "price": 421 },
+  { "name": "Warrior`s chest", "image": "assets/sample-chest.png", "type": "chest", "price": 23 },
+  { "name": "Chest of harvest", "image": "assets/sample-chest.png", "type": "chest", "price": 23 },
+  { "name": "Chest of classics", "image": "assets/sample-chest.png", "type": "chest", "price": 12 },
+  { "name": "Chest of dungeon", "image": "assets/sample-chest.png", "type": "chest", "price": 22 },
+  {
+    "name": "Chest of sports",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 85,
+    "key": "42141-521521-521512-52151"
+  },
+  {
+    "name": "Riot Points EUNE",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 45,
+    "key": "42141-521521-521512-52151"
+  },
+  {
+    "name": "Random Steam CD-Key",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 34,
+    "key": "42141-521521-521512-52151"
+  },
+  {
+    "name": "PaySafeCard",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 63,
+    "key": "42141-521521-521512-52151"
+  },
+  {
+    "name": "Steam Wallet",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 2,
+    "key": "42141-521521-521512-52151"
+  },
+  {
+    "name": "Counter-Strike: Global Offensive Sking",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 214,
+    "key": "42141-521521-521512-52151"
+  },
+  {
+    "name": "Amazon.de Kupone EUR",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 52,
+    "key": "42141-521521-521512-52151"
+  },
+  {
+    "name": "Premium Random Steam CD-Key",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 21234,
+    "key": "42141-521521-521512-52151"
+  },
+  {
+    "name": "Kinguin Gift Card",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 51,
+    "key": "42141-521521-521512-52151"
+  },
+  { "name": "Fortnite", "image": "assets/sample-reward.png", "type": "reward", "price": 23, "key": "42141-521521-521512-52151" },
+  {
+    "name": "Grant Thift Auto V",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 63,
+    "key": "42141-521521-521512-52151"
+  },
+  {
+    "name": "Killing Floor 2",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 21,
+    "key": "42141-521521-521512-52151"
+  },
+  {
+    "name": "Euro Truck Simulator 2",
+    "image": "assets/sample-reward.png",
+    "type": "reward",
+    "price": 33,
+    "key": "42141-521521-521512-52151"
+  }
+]
