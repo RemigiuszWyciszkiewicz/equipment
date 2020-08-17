@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import * as data from './data/items-mock.json';
+
 import { Item, ItemType } from './data/item';
 
 import { transAnimation } from 'src/animations';
