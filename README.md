@@ -1,4 +1,5 @@
-# Equipment
-
-- NPM install
-- ng serve
+## Start-up guide
+### First step
+`` npm install ``
+### Second step
+``ng serve``
